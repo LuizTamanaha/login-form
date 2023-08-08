@@ -1,0 +1,81 @@
+:root{
+    --br-html: #95a5a6;
+    --bg-form: #ecf0f1;
+    --color-input-border: #bbb;
+    --color-legend: #454e5f;
+    --color-btn: #fff;
+}
+
+html{
+    background-color: var(--br-html);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+form{
+    width: 25em;
+    background-color: var(--bg-form);
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #333;
+    padding: 1em;
+}
+
+fieldset{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend{
+    text-align: center;
+    padding: 1em;
+    margin-bottom: .5em;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--color-legend);
+}
+
+label{
+    margin-bottom: .25em;
+}
+
+input{
+    padding: .75em;
+    border-radius: 5px;
+    margin-bottom: 1.5em;
+    border: 1px solid var(--color-input-border);
+    font-size: 1em;
+}
+
+label, 
+input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.buttons{
+    display: flex;
+    gap: 1em;
+}
+
+.btn-reset{
+    background-color: rgba(255, 0, 0, 0.747);
+    color: var(--color-btn);
+    cursor: pointer;
+
+}
+
+.btn-enter{
+    background-color: rgba(0, 0, 255, 0.747);
+    color: var(--color-btn);
+    cursor: pointer;
+}
